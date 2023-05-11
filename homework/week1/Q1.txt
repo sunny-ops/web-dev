@@ -1,0 +1,9 @@
+1. <input type=‘submit’> 和 <Button type=‘submit’>效果看起来是一样的，有什么区别吗？
+
+2. form.css Line 32, 设置label的大小和边距，不改成block就没有效果了
+
+3. form.css Line 54, Button按照之前网页上的大小设置长和宽但是显示的时候却很小
+
+4. form.css Line 15, 设置居中一般是常用flex吗？
+
+5. 我现在将盒子的大小，padding，margin等统一成了px, 这样是可以的吗？还是有更好的建议。

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="form.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <div>
+        <h1>青春不常在， 抓紧谈恋爱</h1>
+        <form autocomplete="on">
+          <label class="label">性别:</label>
+          <input type="radio" name="gender" value="1" /><span
+            class="material-icons"
+            >man </span
+          >男 <input type="radio" name="gender" value="2" /><span
+            class="material-icons"
+            >woman</span
+          >女
+          <br />
+          <label class="label">生日:</label>
+          <select name="year">
+            <option value="">请选择年份</option>
+            <option value="2002">2022年</option>
+            <option value="2003">2023年</option>
+            <option value="2004">2024年</option>
+          </select>
+          <select name="month">
+            <option value="">请选择月份</option>
+            <option value="1">1月</option>
+            <option value="2">2月</option>
+            <option value="3">3月</option>
+          </select>
+          <select name="date">
+            <option value="">请选择日</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select>
+          <br />
+          <lable class="label">所在地区：</lable>
+          <input type="text" name="location" placeholder="北京思密达" />
+          <br />
+          <label class="label">婚姻状况：</label>
+          <input type="radio" name="marital" value="1" />未婚
+          <input type="radio" name="marital" value="2" />已婚
+          <input type="radio" name="marital" value="3" />离异
+          <br />
+          <label class="label">学历：</label>
+          <input type="text" placeholder="博士" />
+          <br />
+          <label class="label">喜欢的类型：</label>
+          <input type="checkbox" name="type" value="1" />妩媚的
+          <input type="checkbox" name="type" value="2" />可爱的
+          <input type="checkbox" name="type" value="3" />小鲜肉
+          <input type="checkbox" name="type" value="4" />老腊肉
+          <input type="checkbox" name="type" value="5" />都喜欢
+          <br />
+          <label class="label">个人介绍：</label>
+          <textarea
+            name="intro"
+            placeholder="个人简介"
+            rows="2"
+            cols="30"
+          ></textarea>
+          <br />
+          <label class="label"></label>
+          <input type="submit" value="免费注册" />
+          <br />
+          <label class="label"></label>
+          <input
+            type="checkbox"
+            name="agree"
+            value="1"
+            required
+          />我同意注册条款和会员加入标准
+        </form>
+        <label class="label"></label>
+        <a href="https://www.google.com" target="_blank">我是会员，立即登录</a>
+        <div class="promise">
+          <h4>我承诺</h4>
+          <ul>
+            <li>年满18岁，单身</li>
+            <li>抱着严肃的态度</li>
+            <li>真诚的寻找另一半</li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <form action="new" method="get" autocomplete="on">
+          <label class="label">颜色:</label>
+          <input type="color" name="color" /><br />
+          <label class="label">日期:</label>
+          <input type="date" name="date" /><br />
+          <label class="label">日期时间:</label>
+          <input type="datetime" name="datetime" /><br />
+          <label class="label">邮箱:</label>
+          <!-- 核实了邮箱格式@ -->
+          <input type="email" name="email" /><br />
+          <!-- autocomplete没什么效果？？？ -->
+          <label class="label">月份:</label>
+          <input type="month" name="month" /><br />
+          <label class="label">数字</label>
+          <input
+            type="number"
+            name="number"
+            value="0"
+            max="10"
+            min="-10"
+          /><br />
+          <label class="label">区间</label>
+          <input type="range" name="range" value="0" max="10" min="-10" /><br />
+          <label class="label">搜索</label>
+          <input type="search" name="search" autofocus /><br />
+          <label class="label">电话</label>
+          <input type="tel" name="tel" /><br />
+          <label class="label">时间</label>
+          <input type="time" name="time" /><br />
+          <label class="label">网址</label>
+          <!-- 核实了网址格式https:// -->
+          <input type="url" name="url" /><br />
+          <label class="label">星期</label>
+          <input type="week" name="week" /><br />
+          <label class="label">文件</label>
+          <input type="file" name="files[]" multiple /><br />
+          <!-- 好像并没有显示多个文件？？？ -->
+          <label class="label"></label>
+          <input type="submit" value="提交" />
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
