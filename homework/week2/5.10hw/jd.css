@@ -16,6 +16,7 @@ body {
   height: 30px;
   background-color: #e3e4e5;
   position: relative;
+  /* border-bottom: 1px solid #ddd; */
 }
 
 .navbar {
@@ -48,6 +49,7 @@ ul {
   width: 729px;
   /* overflow: auto; */
 }
+
 li {
   float: left;
 }
@@ -59,6 +61,7 @@ li {
   height: 10px;
   background-color: #ccc;
 }
+
 .li1 {
   width: 126px;
 }
@@ -66,22 +69,102 @@ li {
 .li2 {
   width: 62px;
 }
+
 .li3 {
   width: 77px;
+  position: relative;
 }
+
+.myjd {
+  display: block;
+  width: 75px;
+  height: 28px;
+  line-height: 28px;
+  border: 1px solid transparent;
+}
+
 .li4 {
   width: 74px;
 }
+
 .li5 {
   width: 80px;
 }
+
+.div3 {
+  display: none;
+  width: 280px;
+  height: 230px;
+  border: 1px solid #ccc;
+  border-top-color: transparent;
+  position: absolute;
+  top: 30px;
+  left: 0px;
+}
+
+.div3_li1 {
+  width: 265px;
+  height: 48px;
+  padding: 10px 0px 10px 15px;
+}
+
+.div3_li2 {
+  border-top: 1px solid #ccc;
+}
+
+.div3_li3 {
+  width: 265px;
+  height: 72px;
+  padding: 10px 0px 10px 15px;
+}
+
+.div3_li1_rol1 {
+  width: 88px;
+  height: 48px;
+}
+
+.inner_div {
+  width: 88px;
+  height: 24px;
+  text-align: left;
+  line-height: 24px;
+}
+
 a {
   text-decoration: none;
   color: inherit;
 }
+
 a:hover {
   color: red;
 }
+
 .register {
   color: red;
+}
+
+.li3:hover .div3 {
+  display: block;
+}
+
+.li3:hover .myjd {
+  background-color: white;
+  border-color: #ccc;
+  border-bottom-color: transparent;
+}
+
+.li3:hover .div3::before {
+  content: "";
+  /* 必须设置内容为空 */
+  position: absolute;
+  /* 设置伪元素为绝对定位 */
+  top: -1px;
+  /* 将伪元素定位到顶部边界的上方 2 像素位置 */
+  left: 75px;
+  /* 将伪元素定位到左边界 */
+  width: 73.5%;
+  /* 设置伪元素的宽度为容器宽度的一半 */
+  height: 1px;
+  /* 设置伪元素的高度与顶部边框相同 */
+  background-color: #ccc;
 }
