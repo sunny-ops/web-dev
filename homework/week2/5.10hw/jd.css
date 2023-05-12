@@ -20,10 +20,12 @@ body {
 }
 
 .navbar {
-  width: 63vw;
+  width: 1190px; /* 1190 / 1903px */
   height: 30px;
   /* background-color: red; */
   position: absolute;
+  /* top: 0px;
+  left: 356.5px; */
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -38,9 +40,10 @@ ul {
 
 .ul1 {
   float: left;
-  width: 58px;
+  width: 42px;
   padding: 0 7px;
-  border: 1px;
+  border: 1px solid transparent;
+  position: relative;
 }
 
 .ul2 {
@@ -64,6 +67,7 @@ li {
 
 .li1 {
   width: 126px;
+  margin-right: 8px;
 }
 
 .li2 {
@@ -83,12 +87,20 @@ li {
   border: 1px solid transparent;
 }
 
-.li4 {
+.li7 {
   width: 74px;
+  position: relative;
 }
 
-.li5 {
-  width: 80px;
+.div_oversea {
+  display: block;
+  width: 300px;
+  height: 416px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  position: absolute;
+  /* top: 30px;
+    left: 0px; */
 }
 
 .div3 {
@@ -96,10 +108,9 @@ li {
   width: 280px;
   height: 230px;
   border: 1px solid #ccc;
-  border-top-color: transparent;
   position: absolute;
-  top: 30px;
-  left: 0px;
+  /* top: 30px;
+  left: 0px; */
 }
 
 .div3_li1 {
@@ -109,7 +120,7 @@ li {
 }
 
 .div3_li2 {
-  border-top: 1px solid #ccc;
+  border-top: 1px solid #f1f1f1;
 }
 
 .div3_li3 {
@@ -130,7 +141,145 @@ li {
   line-height: 24px;
 }
 
+.div4 {
+  display: none;
+  width: 140px;
+  height: 144px;
+  padding: 10px 1px 10px 12px;
+  border: 1px solid #ccc;
+}
+.div4_li1 {
+  height: 24px;
+  max-width: 84px;
+  min-width: 38px;
+  line-height: 24px;
+}
+.div4_li1:nth-child(odd) {
+  padding-right: 11px;
+}
+
+.div5 {
+  width: 170px;
+  height: 72px;
+  padding: 10px 0px 10px 0px;
+  border: 1px solid #ccc;
+}
+.div5_li1 {
+  text-align: left;
+  width: 70px;
+  height: 24px;
+  padding-left: 15px;
+}
+.div6 {
+  display: none;
+  width: 1188px;
+  height: 125px;
+  padding: 15px 0px 15px 0px;
+  border: 1px solid #ccc;
+  position: absolute;
+  right: -84px;
+}
+.div6_li1 {
+  width: 340px;
+  height: 101px;
+  padding: 0px 0px 0px 20px;
+}
+.div6_li1_dt {
+  float: left;
+  text-align: left;
+  width: 340px;
+  height: 24px;
+  margin: 0px 0px 5px 0px;
+  font-weight: 700;
+  color: #666;
+  line-height: 24px;
+}
+.div6_li1_dd {
+  float: left;
+  text-align: left;
+  width: 85px;
+  height: 24px;
+  line-height: 24px;
+}
+.div6_li2 {
+  width: 255px;
+  height: 125px;
+  border-left: 1px solid #f1f1f1;
+}
+.div6_li2_dt {
+  width: 225px;
+}
+
+.div7 {
+  display: none;
+  width: 190px;
+  height: 505px;
+  border: 1px solid #ccc;
+  position: absolute;
+  right: 0px;
+}
+.div7_li1 {
+  position: relative;
+  width: 190px;
+  height: 70px;
+  padding: 15px 0px 15px 0px;
+  border-bottom: 1px solid #e7e7e7;
+}
+.div7_li1_img_div {
+  width: 74px;
+  height: 74px;
+  border: 1px solid #ccc;
+  background-color: #f7f7f7;
+  position: absolute;
+  top: 14px;
+  left: 5px;
+}
+.div7_li1_img_div img {
+  width: 70px;
+  height: 70px;
+  margin: 2px 0 0 2px;
+}
+.div7_li1_info_div {
+  width: 94px;
+  height: 70px;
+  text-align: left;
+  margin: 0 10px 0 86px;
+}
+.div7_li1_info_div h5 {
+  width: 94px;
+  height: 17px;
+  line-height: 17px;
+  color: #666666;
+  font-size: 12px;
+}
+.div7_li1_info_div p {
+  width: 94px;
+  height: 14px;
+  line-height: 14px;
+  margin: 3px 0 3px 0;
+  color: #f10214;
+  font-size: 12px;
+}
+.icons {
+  width: 94px;
+  height: 25px !important;
+}
+.icons img {
+  width: 15px;
+  height: 15px;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+.div7_li1_info_div a {
+  width: 25px;
+  height: 25px;
+  margin-right: 2px;
+  float: left;
+}
+
 a {
+  /* display: block; */
   text-decoration: none;
   color: inherit;
 }
@@ -150,21 +299,47 @@ a:hover {
 .li3:hover .myjd {
   background-color: white;
   border-color: #ccc;
-  border-bottom-color: transparent;
 }
 
 .li3:hover .div3::before {
+  content: ""; /* 必须设置内容为空 */
+  position: absolute; /* 设置伪元素为绝对定位 */
+  top: -1px; /* 将伪元素定位到顶部边界的上方 1 像素位置 */
+  left: 0px; /* 将伪元素定位到左边界 */
+  width: 75px; /* 设置伪元素的宽度 */
+  height: 1px; /* 设置伪元素的高度与顶部边框相同 */
+  background-color: white;
+}
+
+.li3:hover .myjd::before {
   content: "";
-  /* 必须设置内容为空 */
   position: absolute;
-  /* 设置伪元素为绝对定位 */
-  top: -1px;
-  /* 将伪元素定位到顶部边界的上方 2 像素位置 */
-  left: 75px;
-  /* 将伪元素定位到左边界 */
-  width: 73.5%;
-  /* 设置伪元素的宽度为容器宽度的一半 */
+  top: 29px;
+  left: 1px;
+  width: 75px;
   height: 1px;
-  /* 设置伪元素的高度与顶部边框相同 */
-  background-color: #ccc;
+  background-color: white;
+}
+
+.li3:hover .div6 {
+  display: block;
+}
+
+.li3:hover .div6::before {
+  content: ""; /* 必须设置内容为空 */
+  position: absolute; /* 设置伪元素为绝对定位 */
+  top: -1px; /* 将伪元素定位到顶部边界的上方 1 像素位置 */
+  right: 84px; /* 将伪元素定位到左边界 */
+  width: 75px; /* 设置伪元素的宽度 */
+  height: 1px; /* 设置伪元素的高度与顶部边框相同 */
+  background-color: white;
+}
+
+.li7:hover .div7 {
+  display: block;
+}
+
+.ul1:hover {
+  background-color: white;
+  border-color: #ccc;
 }
