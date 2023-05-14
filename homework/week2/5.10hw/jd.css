@@ -39,13 +39,103 @@ ul {
 }
 
 .ul1 {
+  width: 58px;
   float: left;
-  width: 42px;
-  padding: 0 7px;
-  border: 1px solid transparent;
   position: relative;
 }
 
+.oversea {
+  float: left;
+  width: 42px;
+  height: 28px;
+  line-height: 28px;
+  text-align: center;
+  padding: 0 7px;
+  border: 1px solid transparent;
+}
+.li0 {
+  position: relative;
+}
+.div0 {
+  display: none;
+  width: 300px;
+  height: 416px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  position: absolute;
+  top: 30px;
+}
+
+.div0_li1 {
+  width: 300px;
+  height: 196px;
+}
+
+.div0_li2 {
+  width: 290px;
+  height: 95px;
+  margin: 10px 0 10px 10px;
+}
+
+.div0_li1_inner {
+  float: left;
+  width: 60px;
+  height: 24px;
+  padding: 2px 0;
+}
+
+.city {
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  padding: 0 8px;
+}
+
+.city3 {
+  width: 36px;
+}
+
+.div0_li2 {
+  width: 290px;
+  height: 95px;
+  margin: 10px 0 10px 10px;
+}
+
+.split_line {
+  width: 262px;
+  height: 0;
+  border-bottom: 1px dotted #eee;
+}
+.div0_li2_1 {
+  width: 290px;
+  height: 24px;
+  margin: 9px 0;
+  text-align: left;
+  line-height: 24px;
+}
+
+.div0_li2_region {
+  width: 145px;
+  height: 26px;
+  float: left;
+}
+.div0_li2_inner {
+  display: block;
+  width: 120px;
+  height: 26px;
+  line-height: 26px;
+  text-align: left;
+}
+
+.div0_li2_country {
+  width: 145px;
+  height: 26px;
+  float: left;
+  line-height: 26px;
+  text-align: left;
+  font-family: Microsoft YaHei, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53",
+    sans-serif;
+}
 .ul2 {
   /* background-color: wheat; */
   float: right;
@@ -339,7 +429,35 @@ a:hover {
   display: block;
 }
 
-.ul1:hover {
+.li0:hover .oversea {
   background-color: white;
   border-color: #ccc;
+}
+
+.li0:hover .city_oversea {
+  background-color: red;
+  color: white;
+}
+.li0:hover .div0 {
+  display: block;
+}
+
+.li0:hover .oversea::before {
+  content: "";
+  position: absolute;
+  top: 29px;
+  left: 1px;
+  width: 56px;
+  height: 1px;
+  background-color: white;
+}
+
+.li0:hover .div0::before {
+  content: ""; /* 必须设置内容为空 */
+  position: absolute; /* 设置伪元素为绝对定位 */
+  top: -1px; /* 将伪元素定位到顶部边界的上方 1 像素位置 */
+  left: 0px; /* 将伪元素定位到左边界 */
+  width: 56px; /* 设置伪元素的宽度 */
+  height: 1px; /* 设置伪元素的高度与顶部边框相同 */
+  background-color: white;
 }
