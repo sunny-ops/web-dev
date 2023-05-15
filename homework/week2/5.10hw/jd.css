@@ -16,7 +16,7 @@ body {
   height: 30px;
   background-color: #e3e4e5;
   position: relative;
-  /* border-bottom: 1px solid #ddd; */
+  border-bottom: 1px solid #ddd;
 }
 
 .navbar {
@@ -45,7 +45,8 @@ ul {
 }
 
 .oversea {
-  float: left;
+  /* float: left; */
+  display: block;
   width: 42px;
   height: 28px;
   line-height: 28px;
@@ -53,6 +54,7 @@ ul {
   padding: 0 7px;
   border: 1px solid transparent;
 }
+
 .li0 {
   position: relative;
 }
@@ -63,7 +65,7 @@ ul {
   padding: 10px;
   border: 1px solid #ccc;
   position: absolute;
-  top: 30px;
+  /* top: 30px; */
 }
 
 .div0_li1 {
