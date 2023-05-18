@@ -26,6 +26,15 @@ body {
   font-display: swap;
 }
 
+@font-face {
+  font-family: FriendlyFont;
+  src: url(./fonts/FriendlyFont.eot);
+  src: url(/site_fonts/FriendlyFont/FriendlyFont.eot) format("embedded-opentype"), url(.fonts/FriendlyFont.woff) format("woff"), url(/site_fonts/FriendlyFont/FriendlyFont.otf) format("opentype");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
 nav {
   width: 100vw;
   height: 70px;
@@ -37,7 +46,8 @@ nav {
   width: 1140px;
   height: 70px;
   padding: 0 15px;
-  margin: 0 auto; /* 居中 */
+  margin: 0 auto;
+  /* 居中 */
 }
 
 .nav_left {
@@ -59,6 +69,7 @@ nav {
   float: right;
   /* overflow: hidden; */
 }
+
 .nav_right:hover {
   text-decoration: underline;
 }
@@ -72,12 +83,13 @@ nav {
   line-height: 35px;
   font-family: Promo, Helvetica, Arial, sans-serif;
 }
-.nav_right li > a {
+
+.nav_right li>a {
   text-decoration: none;
   color: #fff;
 }
 
-.nav_right li > a:hover {
+.nav_right li>a:hover {
   text-decoration: underline;
 }
 
@@ -88,6 +100,7 @@ nav {
 .price {
   margin: 16px 15px 19px;
 }
+
 .status {
   margin: 16px 0 19px 6px;
   padding: 0 10px 1px;
@@ -95,6 +108,7 @@ nav {
   width: 52.352px;
   text-align: right;
 }
+
 .status:before {
   content: "";
   position: absolute;
@@ -113,6 +127,7 @@ nav {
   background-color: rgba(255, 255, 255, 0.15);
   border-radius: 3px;
 }
+
 .signup {
   margin: 16px 0 19px 15px;
   padding: 0 10px 1px;
@@ -123,7 +138,7 @@ nav {
 
 .background {
   color: #fff;
-  width: 100vw;
+  /* width: 100vw; */
   height: 314px;
   padding: 140px 0 160px;
   background: url(https://weatherstack.com/site_images/mountains.svg),
@@ -133,15 +148,62 @@ nav {
 }
 
 .container {
-  max-width: 1170px;
+  width: 1140px;
   padding: 0 15px;
   margin: 0 auto;
   font-family: Promo, Helvetica, Arial, sans-serif;
 }
 
 .realtime h2 {
+  width: 433.74px;
   font-weight: 500;
   font-size: 32px;
   margin-bottom: 20px;
   line-height: 40px;
+}
+
+.realtime h4 {
+  display: inline-block;
+  font-weight: 300;
+  font-size: 18px;
+  margin-bottom: 17px;
+  line-height: 25px;
+}
+
+.num_of_companies {
+  display: block;
+  width: 362px;
+  height: 25px;
+  font-size: 17px;
+  font-weight: 300;
+  text-align: center;
+  padding: 9px 10px 13px 9px;
+  margin: 8px 0 15px 0;
+  border: 0 solid rgba(255, 255, 255, 1);
+  border-radius: 17px;
+  line-height: 25px;
+  background: rgba(255, 255, 255, .1);
+}
+
+.start {
+  display: inline-block;
+  width: 228px;
+  height: 58px;
+  margin-top: 20px;
+  margin-right: 5px;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  background: #f47b21;
+  font-size: 14px;
+  text-align: center;
+  line-height: 58px;
+}
+
+.start:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.friendly1 {
+  font-family: FriendlyFont, sans-serif;
 }
