@@ -14,13 +14,16 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-ul {
-  list-style: none;
-}
-a {
-  display: inline-block;
-  text-decoration: none;
-  color: inherit;
+@font-face {
+  font-family: Promo;
+  src: url(/fonts/Promo/Promo-Bold.eot);
+  src: url(/fonts/Promo/Promo-Bold.eot?#iefix) format("embedded-opentype"),
+    url(./fonts/Promo-Bold.woff) format("woff"),
+    url(/fonts/Promo/Promo-Bold.ttf) format("truetype"),
+    url(/fonts/Promo/Promo-Bold.svg) format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
 }
 
 nav {
@@ -34,43 +37,88 @@ nav {
   width: 1140px;
   height: 70px;
   padding: 0 15px;
-  margin: 0 auto;
+  margin: 0 auto; /* 居中 */
 }
 
 .nav_left {
-  width: 197px;
-  height: 46.094px;
   padding: 0 0 0 15px;
   float: left;
 }
 
 .logo_image {
-  display: inline-block;
   width: 202px;
   height: 28px;
   margin: 18.94px 0 0 -15px;
 }
 
 .nav_right {
+  list-style: none;
   width: 580.461px;
   height: 70px;
-  /* margin: 0px auto; */
-  /* margin-right: 0px; */
+  color: #fff;
   float: right;
+  overflow: hidden;
+}
+.nav_right:hover {
+  text-decoration: underline;
 }
 
-li > a {
+.nav_right li > a {
+  text-decoration: none;
   float: left;
   color: #fff;
   font-size: 13px;
   font-weight: 500;
   line-height: 35px;
-  margin: 16px 15px 19px;
-  display: -webkit-inline-box;
   font-family: Promo, Helvetica, Arial, sans-serif;
 }
 
+.nav_right li > a:hover {
+  text-decoration: underline;
+}
+
+.friendly {
+  font-family: Promo;
+}
+
+.price {
+  margin: 16px 15px 19px;
+}
+.status {
+  margin: 16px 0 19px 6px;
+  padding: 0 10px 1px;
+  position: relative;
+  width: 52.352px;
+  text-align: right;
+}
+.status:before {
+  content: "";
+  position: absolute;
+  top: 13px;
+  left: 8px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #47c652;
+}
+
+.login {
+  margin: 16px 0 19px 15px;
+  padding: 0 10px 1px;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 3px;
+}
+.signup {
+  margin: 16px 0 19px 15px;
+  padding: 0 10px 1px;
+  position: relative;
+  background-color: #f47b21;
+  border-radius: 3px;
+}
+
 .background {
+  color: #fff;
   width: 100vw;
   height: 314px;
   padding: 140px 0 160px;
@@ -78,5 +126,17 @@ li > a {
     linear-gradient(135deg, #1f4e69 0, #164058 100%);
   background-size: cover;
   background-position: center;
-  color: #fff;
+}
+
+.container {
+  padding: 0 15px;
+  margin: 0 auto;
+  font-family: Promo, Helvetica, Arial, sans-serif;
+}
+
+.realtime h2 {
+  font-weight: 500;
+  font-size: 32px;
+  margin-bottom: 20px;
+  line-height: 40px;
 }
