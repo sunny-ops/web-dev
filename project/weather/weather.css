@@ -57,13 +57,13 @@ nav {
   height: 70px;
   color: #fff;
   float: right;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 .nav_right:hover {
   text-decoration: underline;
 }
 
-.nav_right li > a {
+.nav_right li {
   text-decoration: none;
   float: left;
   color: #fff;
@@ -71,6 +71,10 @@ nav {
   font-weight: 500;
   line-height: 35px;
   font-family: Promo, Helvetica, Arial, sans-serif;
+}
+.nav_right li > a {
+  text-decoration: none;
+  color: #fff;
 }
 
 .nav_right li > a:hover {
