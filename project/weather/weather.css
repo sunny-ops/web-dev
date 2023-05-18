@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+  font-family: "Open Sans", "Gill Sans MT", "Gill Sans", Corbel, Arial,
+    sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #000;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+ul {
+  list-style: none;
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+
+nav {
+  width: 100vw;
+  height: 70px;
+  position: absolute;
+  top: 0;
+}
+
+.nav_container {
+  width: 1140px;
+  height: 70px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.nav_left {
+  width: 197px;
+  height: 46.094px;
+  padding: 0 0 0 15px;
+  float: left;
+}
+
+.logo_image {
+  display: inline-block;
+  width: 202px;
+  height: 28px;
+  margin: 18.94px 0 0 -15px;
+}
+
+.nav_right {
+  width: 580.461px;
+  height: 70px;
+  /* margin: 0px auto; */
+  /* margin-right: 0px; */
+  float: right;
+}
+
+li > a {
+  float: left;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 35px;
+  margin: 16px 15px 19px;
+  display: -webkit-inline-box;
+  font-family: Promo, Helvetica, Arial, sans-serif;
+}
+
+.background {
+  width: 100vw;
+  height: 314px;
+  padding: 140px 0 160px;
+  background: url(https://weatherstack.com/site_images/mountains.svg),
+    linear-gradient(135deg, #1f4e69 0, #164058 100%);
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
