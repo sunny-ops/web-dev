@@ -233,11 +233,14 @@ nav {
   width: 1140px;
   padding: 0 15px;
   margin: 0 auto;
-  /* font-family: Promo, Helvetica, Arial, sans-serif; */
+  position: relative;
+}
+
+.background .realtime {
+  display: inline-block;
 }
 
 .realtime h2 {
-  width: 433.74px;
   font-weight: 500;
   font-size: 32px;
   margin-bottom: 20px;
@@ -245,11 +248,9 @@ nav {
 }
 
 .realtime h4 {
-  /* display: inline-block; */
   font-weight: 300;
   font-size: 18px;
   line-height: 25px;
-  /* font-family: Promo, Helvetica, Arial, sans-serif; */
 }
 
 .num_of_companies {
@@ -306,6 +307,19 @@ nav {
   position: relative;
   left: 10px;
   top: -1px;
+}
+
+.background .animation {
+  display: inline-block;
+  width: 500px;
+  height: 300px;
+  border-radius: 10px;
+  background-color: #16394c;
+  border: 4px solid #608094;
+  position: absolute;
+  right: 15px;
+  top: 14px;
+  box-sizing: border-box;
 }
 
 .customer {
