@@ -16,11 +16,23 @@ body {
 
 @font-face {
   font-family: Promo;
-  src: url(/fonts/Promo/Promo-Bold.eot);
-  src: url(/fonts/Promo/Promo-Bold.eot?#iefix) format("embedded-opentype"),
+  src: url(./fonts/Promo-Med.eot);
+  src: url(./fonts/Promo-Med.eot?#iefix) format("embedded-opentype"),
+    url(./fonts/Promo-Med.woff) format("woff"),
+    url(./fonts/Promo-Med.ttf) format("truetype"),
+    url(./fonts/Promo-Med.svg) format("svg");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Promo;
+  src: url(./fonts/Promo-Bold.eot);
+  src: url(./fonts/Promo-Bold.eot?#iefix) format("embedded-opentype"),
     url(./fonts/Promo-Bold.woff) format("woff"),
-    url(/fonts/Promo/Promo-Bold.ttf) format("truetype"),
-    url(/fonts/Promo/Promo-Bold.svg) format("svg");
+    url(./fonts/Promo-Bold.ttf) format("truetype"),
+    url(./fonts/Promo-Bold.svg) format("svg");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -29,9 +41,79 @@ body {
 @font-face {
   font-family: FriendlyFont;
   src: url(./fonts/FriendlyFont.eot);
-  src: url(/site_fonts/FriendlyFont/FriendlyFont.eot) format("embedded-opentype"), url(.fonts/FriendlyFont.woff) format("woff"), url(/site_fonts/FriendlyFont/FriendlyFont.otf) format("opentype");
+  src: url(./fonts/FriendlyFont.eot) format("embedded-opentype"),
+    url(./fonts/FriendlyFont.woff) format("woff"),
+    url(./fonts/FriendlyFont.otf) format("opentype");
   font-style: normal;
   font-weight: 400;
+  font-display: swap;
+}
+
+/* open-sans-regular - latin */
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../site_fonts/Linearicons/open-sans-v34-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("../site_fonts/Linearicons/open-sans-v34-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("./fonts/open-sans-v34-latin-regular.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */ url("./fonts/open-sans-v34-latin-regular.woff")
+      format("woff"),
+    /* Modern Browsers */
+      url("../site_fontsLinearicons/open-sans-v34-latin-regular.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../site_fonts/Linearicons/open-sans-v34-latin-regular.svg#OpenSans")
+      format("svg"); /* Legacy iOS */
+}
+
+/* open-sans-600 - latin */
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../site_fonts/Linearicons/open-sans-v34-latin-600.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("../site_fonts/Linearicons/open-sans-v34-latin-600.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("./fonts/open-sans-v34-latin-600.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("./fonts/open-sans-v34-latin-600.woff")
+      format("woff"),
+    /* Modern Browsers */
+      url("../site_fonts/Linearicons/open-sans-v34-latin-600.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../site_fonts/Linearicons/open-sans-v34-latin-600.svg#OpenSans")
+      format("svg"); /* Legacy iOS */
+}
+/* open-sans-700 - latin */
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../site_fonts/Linearicons/open-sans-v34-latin-700.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("../site_fonts/Linearicons/open-sans-v34-latin-700.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("./fonts/open-sans-v34-latin-700.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("./fonts/open-sans-v34-latin-700.woff")
+      format("woff"),
+    /* Modern Browsers */
+      url("../site_fonts/Linearicons/open-sans-v34-latin-700.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../site_fonts/Linearicons/open-sans-v34-latin-700.svg#OpenSans")
+      format("svg"); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: Linearicons;
+  src: url(./fonts/Linearicons.ttf) format("truetype");
+  font-weight: 400;
+  font-style: normal;
   font-display: swap;
 }
 
@@ -81,19 +163,19 @@ nav {
   font-size: 13px;
   font-weight: 500;
   line-height: 35px;
-  font-family: Promo, Helvetica, Arial, sans-serif;
+  /* font-family: Promo, Helvetica, Arial, sans-serif; */
 }
 
-.nav_right li>a {
+.nav_right li > a {
   text-decoration: none;
   color: #fff;
 }
 
-.nav_right li>a:hover {
+.nav_right li > a:hover {
   text-decoration: underline;
 }
 
-.friendly {
+.promo {
   font-family: Promo;
 }
 
@@ -139,7 +221,7 @@ nav {
 .background {
   color: #fff;
   /* width: 100vw; */
-  height: 314px;
+  /* height: 314px; */
   padding: 140px 0 160px;
   background: url(https://weatherstack.com/site_images/mountains.svg),
     linear-gradient(135deg, #1f4e69 0, #164058 100%);
@@ -147,11 +229,11 @@ nav {
   background-position: center;
 }
 
-.container {
+.background .container {
   width: 1140px;
   padding: 0 15px;
   margin: 0 auto;
-  font-family: Promo, Helvetica, Arial, sans-serif;
+  /* font-family: Promo, Helvetica, Arial, sans-serif; */
 }
 
 .realtime h2 {
@@ -163,28 +245,39 @@ nav {
 }
 
 .realtime h4 {
-  display: inline-block;
+  /* display: inline-block; */
   font-weight: 300;
   font-size: 18px;
-  margin-bottom: 17px;
   line-height: 25px;
+  /* font-family: Promo, Helvetica, Arial, sans-serif; */
 }
 
 .num_of_companies {
   display: block;
-  width: 362px;
-  height: 25px;
+  width: 388px;
+  height: 44px;
+  line-height: 32px;
   font-size: 17px;
   font-weight: 300;
   text-align: center;
-  padding: 9px 10px 13px 9px;
-  margin: 8px 0 15px 0;
+  text-indent: -2.5px;
+  margin: 25px 0 15px 0;
   border: 0 solid rgba(255, 255, 255, 1);
   border-radius: 17px;
-  line-height: 25px;
-  background: rgba(255, 255, 255, .1);
+  background: rgba(255, 255, 255, 0.1);
 }
 
+.num_of_companies::before {
+  font-family: Linearicons;
+  display: inline-block;
+  font-weight: 400;
+  font-size: 25px;
+  content: "\e6e2";
+  position: relative;
+  left: 0;
+  top: 5px;
+  margin-right: 10px;
+}
 .start {
   display: inline-block;
   width: 228px;
@@ -204,6 +297,154 @@ nav {
   cursor: pointer;
 }
 
-.friendly1 {
+.friendly {
   font-family: FriendlyFont, sans-serif;
+  font-size: 19px;
+}
+
+.free {
+  position: relative;
+  left: 10px;
+  top: -1px;
+}
+
+.customer {
+  padding: 40px 0 12px 0;
+  background: #eff2f5;
+  max-height: 84px;
+}
+
+.customer .container {
+  max-width: 1140px;
+  padding: 0 15px;
+  margin: 0 auto;
+  position: relative;
+}
+.customer .container ul {
+  padding-left: 10px;
+}
+.customer .container ul li {
+  display: inline-block;
+  height: 50px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.happy {
+  font-weight: 300;
+  font-size: 15px;
+  background: 0 0;
+  width: 185px;
+  position: relative;
+  top: -19px;
+  text-align: left;
+}
+
+.deloitte {
+  background-image: url(https://weatherstack.com/site_images/client_deloitte.svg);
+  width: 187px;
+  background-size: 120px;
+}
+
+.microsoft {
+  background-image: url(https://weatherstack.com/site_images/client_microsoft.svg);
+  width: 187px;
+  background-size: 135px;
+}
+
+.wb {
+  background-image: url(https://weatherstack.com/site_images/client_warnerbros.svg);
+  width: 110px;
+  background-size: 48px;
+}
+.wawa {
+  background-image: url(https://weatherstack.com/site_images/client_wawa.svg);
+  width: 132px;
+  background-size: 85px;
+  position: relative;
+  top: -4px;
+  width: 132px;
+  left: 4px;
+}
+
+.schneider {
+  background-image: url(https://weatherstack.com/site_images/client_schneider.svg);
+  width: 187px;
+  background-size: 125px;
+  position: relative;
+  top: 4px;
+}
+
+.ericsson {
+  background-image: url(https://weatherstack.com/site_images/client_ericsson_2.svg);
+  width: 112px;
+}
+
+.show .box {
+  display: inline-block;
+  width: 230px;
+  height: 190px;
+  padding: 10px;
+  margin: 0 12px;
+  background-color: #ebeff4;
+  border-radius: 5px;
+  line-height: 20px;
+}
+
+.show .boxes {
+  display: inline-block;
+  padding: 18px 17px 19px 17px;
+  margin: 0 auto;
+  background: #eff2f5;
+  border-radius: 5px;
+}
+
+.show .container {
+  padding: 0 15px;
+  text-align: center;
+}
+
+.show {
+  margin: 40px 0 40px 0;
+}
+
+.show .title {
+  font-size: 16px;
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 600;
+  margin: 10px 0 10px 0;
+  text-align: left;
+}
+
+.show .content {
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.show .title::before {
+  font-family: Linearicons;
+  display: block;
+  font-weight: 400;
+  speak: none;
+  font-size: 30px;
+  content: "\e959";
+  position: relative;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.show .realtime::before {
+  content: "\e655";
+}
+
+.show .locations::before {
+  content: "\e778";
+  font-size: 28px;
+}
+.show .time_speed::before {
+  content: "\e836";
+}
+.show .start_free::before {
+  content: "\e756";
 }
