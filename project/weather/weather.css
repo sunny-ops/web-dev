@@ -908,8 +908,10 @@ nav {
 }
 
 .get_api {
-  padding: 45px 30px 50px 30px;
+  padding: 34px 30px 34px 30px;
   background: #eef2f5;
+  /* height: 116.5px; */
+  box-sizing: border-box;
 }
 
 .get_api .container {
@@ -940,6 +942,7 @@ nav {
   margin-left: 10px;
   content: "\e944";
   position: absolute;
+  top: 1px;
 }
 
 .get_api .container a {
@@ -955,7 +958,9 @@ nav {
 }
 
 foot {
+  display: block;
   padding: 50px 0;
+  background: #184157;
 }
 
 foot .container {
@@ -963,4 +968,78 @@ foot .container {
   max-width: 1170px;
   box-sizing: border-box;
   margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+}
+
+foot .container .copyright {
+  width: 27%;
+}
+
+foot .container .copyright img {
+  width: 197px;
+  height: 35px;
+}
+
+foot .container .social {
+  margin-top: 20px;
+}
+
+foot .container .social .github {
+  display: inline-block;
+  margin: 0 3px;
+}
+foot .container .social img {
+  width: 25px;
+  height: 25px;
+}
+
+foot .container ul {
+  list-style: none;
+  width: 196px;
+  line-height: 30px;
+}
+
+foot .container ul li.head {
+  color: #fff;
+  margin-bottom: 10px;
+  font-family: Promo, Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+foot .container ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+foot .container ul li a:hover {
+  text-decoration: underline;
+}
+
+foot .container_bottom {
+  max-width: 1170px;
+  box-sizing: border-box;
+  padding: 0 15px;
+  text-align: center;
+  margin: 0 auto;
+  color: #fff;
+}
+
+foot .container_bottom .list {
+  margin-top: 70px;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+foot .container_bottom .list a {
+  text-decoration: none;
+  color: #fff;
+}
+
+foot .container_bottom .list a:hover {
+  text-decoration: underline;
+}
+foot .container_bottom .copy {
+  font-size: 12px;
 }
