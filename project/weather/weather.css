@@ -194,37 +194,42 @@ body {
     padding: 0 10px;
     top: 70px;
     left: 0;
-    right: 0;
-    bottom: 0;
     background-color: #fff;
+  }
+  .navbar-expand-lg .navbar-nav {
+    font-family: Promo, Helvetica, Arial, sans-serif;
   }
   .navbar-expand-lg .navbar-nav .nav-link:not(.signup) {
     display: inline-block;
     color: #333;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-    font-size: 16px;
-    padding: 13px 5px 23px 15px;
+    /* border-bottom: 1px solid rgba(0, 0, 0, 0.2); */
+    font-size: 1rem;
+    line-height: 3;
+    padding-left: 1em;
     margin: 0;
     font-weight: 500;
     background-color: #fff;
   }
   .nav-link:not(.signup)::after {
     content: "";
-    width: 20px;
-    height: 20px;
+    width: 1rem;
+    height: 1rem;
     display: inline-block;
-    background-image: url(../images/right.png);
-    background-size: 20px 20px;
+    background-image: url(file:///Users/shi/solely/notes/week4/5.24/code/bootstrap5-master/images/right.png);
+    background-size: 1rem 1rem;
     vertical-align: text-bottom;
   }
-  .signup {
+  .navbar-expand-lg .navbar-nav .nav-link.signup {
     display: inline-block;
     color: #fff;
     font-weight: 500;
     background-color: #f47b21;
     border-radius: 3px;
-    padding: 20px 15px;
-    margin: 10px 0 0;
+    line-height: 2em;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-top: 1.5em;
+    margin-left: 1em;
   }
 }
 
