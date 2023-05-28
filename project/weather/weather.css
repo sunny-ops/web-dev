@@ -118,7 +118,117 @@ body {
   font-display: swap;
 }
 
-nav {
+.navbar {
+  position: absolute;
+  width: 100%;
+  height: 70px;
+  box-sizing: border-box;
+}
+
+.navbar-brand img {
+  width: 202px;
+}
+
+@media (min-width: 992px) {
+  .navbar .navbar-nav .nav-link {
+    color: #fff;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 35px;
+    margin: 16px 15px 19px;
+    padding: 0px;
+    font-family: Promo, Helvetica, Arial, sans-serif;
+    position: relative;
+  }
+
+  .navbar .container {
+    max-width: 1170px;
+    box-sizing: border-box;
+    padding: 0 15px;
+  }
+
+  .status:before {
+    content: "";
+    position: absolute;
+    top: 13px;
+    left: -16px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #47c652;
+  }
+
+  .navbar .navbar-nav .status {
+    margin-left: 20px;
+  }
+
+  .navbar .navbar-nav .login {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 0 10px 1px;
+    border-radius: 3px;
+  }
+
+  .navbar .navbar-nav .signup {
+    background: #f47b21;
+    text-transform: uppercase;
+    padding: 0 10px 1px;
+    border-radius: 3px;
+  }
+}
+
+@media (max-width: 990px) {
+  .navbar {
+    background-color: #184157;
+  }
+
+  .navbar .container .navbar-toggler-icon {
+    background-image: url(file:///Users/shi/solely/notes/week4/5.24/code/bootstrap5-master/images/list.png);
+  }
+
+  .navbar .navbar-collapse .navbar-nav {
+    position: fixed;
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    padding: 0 10px;
+    top: 70px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+  }
+  .navbar-expand-lg .navbar-nav .nav-link:not(.signup) {
+    display: inline-block;
+    color: #333;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    font-size: 16px;
+    padding: 13px 5px 23px 15px;
+    margin: 0;
+    font-weight: 500;
+    background-color: #fff;
+  }
+  .nav-link:not(.signup)::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-image: url(../images/right.png);
+    background-size: 20px 20px;
+    vertical-align: text-bottom;
+  }
+  .signup {
+    display: inline-block;
+    color: #fff;
+    font-weight: 500;
+    background-color: #f47b21;
+    border-radius: 3px;
+    padding: 20px 15px;
+    margin: 10px 0 0;
+  }
+}
+
+/* nav {
   width: 100vw;
   height: 70px;
   position: absolute;
@@ -130,7 +240,6 @@ nav {
   height: 70px;
   padding: 0 15px;
   margin: 0 auto;
-  /* 居中 */
 }
 
 .nav_left {
@@ -150,7 +259,6 @@ nav {
   height: 70px;
   color: #fff;
   float: right;
-  /* overflow: hidden; */
 }
 
 .nav_right:hover {
@@ -173,13 +281,13 @@ nav {
 
 .nav_right li > a:hover {
   text-decoration: underline;
-}
+} */
 
 .promo {
   font-family: Promo;
 }
 
-.price {
+/* .price {
   margin: 16px 15px 19px;
 }
 
@@ -216,7 +324,7 @@ nav {
   position: relative;
   background-color: #f47b21;
   border-radius: 3px;
-}
+} */
 
 .background {
   color: #fff;
@@ -484,7 +592,7 @@ nav {
   width: 112px;
 }
 
-.show .box {
+.myshow .box {
   display: inline-block;
   width: 230px;
   padding: 10px;
@@ -494,7 +602,7 @@ nav {
   line-height: 20px;
 }
 
-.show .boxes {
+.myshow .boxes {
   display: inline-block;
   padding: 18px 17px 19px 17px;
   margin: 0 auto;
@@ -502,16 +610,16 @@ nav {
   border-radius: 5px;
 }
 
-.show .container {
+.myshow .container {
   padding: 0 15px;
   text-align: center;
 }
 
-.show {
+.myshow {
   margin: 40px 0 40px 0;
 }
 
-.show .title {
+.myshow .title {
   font-size: 16px;
   display: block;
   margin-bottom: 10px;
@@ -520,12 +628,12 @@ nav {
   text-align: left;
 }
 
-.show .content {
+.myshow .content {
   text-align: left;
   margin-bottom: 10px;
 }
 
-.show .title::before {
+.myshow .title::before {
   font-family: Linearicons;
   display: block;
   font-weight: 400;
@@ -537,18 +645,18 @@ nav {
   text-align: left;
 }
 
-.show .realtime::before {
+.myshow .realtime::before {
   content: "\e655";
 }
 
-.show .locations::before {
+.myshow .locations::before {
   content: "\e778";
   font-size: 28px;
 }
-.show .time_speed::before {
+.myshow .time_speed::before {
   content: "\e836";
 }
-.show .start_free::before {
+.myshow .start_free::before {
   content: "\e756";
 }
 
