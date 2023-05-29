@@ -64,7 +64,7 @@
           </div>
         </div>
       </nav>
-      <section class="background">
+      <section class="background text-center text-sm-start">
         <div class="container">
           <div class="realtime promo">
             <h2>Real-Time & Historical<br />World Weather Data API</h2>
@@ -79,18 +79,28 @@
             <span class="free friendly">— It's free!</span>
           </div>
           <div class="animation">
-            <div class="location">
+            <div class="text-center promo location">
               Bellevue, Washington, United States of America
             </div>
-            <div class="today_left"></div>
-            <div class="today_middle">22°c</div>
-            <div class="today_right">
-              <ul>
-                <li>Wind: 4 kmph</li>
-                <li>Precip: 0 mm</li>
-                <li>Pressure: 1018 mb</li>
-              </ul>
+            <div class="d-flex justify-content-around align-items-center">
+              <div class="today_left align-self-start">
+                <img
+                  src="https://weatherstack.com/site_images/weather_icon_full_sun.svg"
+                  alt="Weather Icon"
+                />
+                <p class="mb-0">Sunny</p>
+              </div>
+
+              <div class="today_middle">22°c</div>
+              <div class="today_right text-left">
+                <ul class="px-0 text-left">
+                  <li>Wind: 4 kmph</li>
+                  <li>Precip: 0 mm</li>
+                  <li>Pressure: 1018 mb</li>
+                </ul>
+              </div>
             </div>
+
             <div class="week">
               <div class="day">
                 <div class="name">SAT</div>
