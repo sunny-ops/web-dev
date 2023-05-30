@@ -156,7 +156,7 @@ a {
     content: "";
     position: absolute;
     top: 13px;
-    left: -16px;
+    left: -6px;
     width: 10px;
     height: 10px;
     border-radius: 50%;
@@ -165,6 +165,7 @@ a {
 
   .navbar .navbar-nav .status {
     margin-left: 20px;
+    padding: 0 10px;
   }
 
   .navbar .navbar-nav .login {
@@ -244,8 +245,6 @@ a {
 
 .background {
   color: #fff;
-  /* width: 100vw; */
-  /* height: 314px; */
   padding: 140px 0 160px;
   background: url(https://weatherstack.com/site_images/mountains.svg),
     linear-gradient(135deg, #1f4e69 0, #164058 100%);
@@ -254,7 +253,7 @@ a {
 }
 
 .background .container {
-  width: 1140px;
+  max-width: 1170px;
   padding: 0 15px;
   margin: 0 auto;
   position: relative;
@@ -264,7 +263,7 @@ a {
   display: inline-block;
 }
 
-.realtime h2 {
+.realtime h3 {
   font-weight: 500;
   font-size: 32px;
   margin-bottom: 20px;
@@ -279,9 +278,6 @@ a {
 
 .num_of_companies {
   display: block;
-  width: 388px;
-  height: 44px;
-  line-height: 32px;
   font-size: 17px;
   font-weight: 300;
   text-align: center;
@@ -290,6 +286,9 @@ a {
   border: 0 solid rgba(255, 255, 255, 1);
   border-radius: 17px;
   background: rgba(255, 255, 255, 0.1);
+  padding: 6px 10px 13px 16px;
+  width: 388px;
+  line-height: 20px;
 }
 
 .num_of_companies::before {
@@ -306,7 +305,6 @@ a {
 .start {
   display: inline-block;
   width: 228px;
-  height: 58px;
   margin-top: 20px;
   margin-right: 5px;
   border: 1px solid transparent;
@@ -359,19 +357,21 @@ a {
 }
 
 .today_left img {
-  width: 130px;
-  height: 97px;
-  background-size: contain;
+  /* width: 130px;
+  height: 97px; */
+  background-size: cover;
+  width: 140px;
+  height: 137px;
+  position: relative;
+  top: -20px;
+  /* background-size: contain; */
 }
-
-/* .today_left::after {
+.today_left::after {
   content: "Sunny";
-  font-size: 14px;
-  font-weight: bold;
   position: absolute;
-  top: 110px;
+  top: 100px;
   left: 50px;
-} */
+}
 
 .today_middle {
   font-size: 32px;
@@ -380,7 +380,6 @@ a {
 .today_right ul {
   list-style: none;
   font-size: 13px;
-  margin-bottom: 0;
 }
 
 .today_right li {
@@ -389,14 +388,11 @@ a {
 
 .animation .day {
   display: inline-block;
-  width: 92px;
-  height: 107px;
+  /* width: 92px;
+  height: 107px; */
   font-size: 12px;
   font-weight: 600;
   text-align: center;
-  position: relative;
-  top: 139px;
-  left: 8.5px;
 }
 
 .animation .day .weather {
@@ -424,6 +420,19 @@ a {
 .animation .day .temp {
   margin-top: 5px;
   font-size: 14px;
+}
+
+@media screen and (max-width: 990px) {
+  .background .animation {
+    position: static;
+    margin-top: 50px;
+    text-align: center;
+    width: auto;
+  }
+
+  .background .container {
+    text-align: center;
+  }
 }
 
 .customer {
