@@ -180,6 +180,10 @@ a {
     padding: 0 10px 1px;
     border-radius: 3px;
   }
+
+  .myshow .box {
+    width: 250px;
+  }
 }
 
 @media (max-width: 990px) {
@@ -237,6 +241,9 @@ a {
     margin-top: 1.5em;
     margin-left: 1em;
   }
+  /* .myshow .box {
+    width: auto;
+  } */
 }
 
 .promo {
@@ -438,14 +445,15 @@ a {
 .customer {
   padding: 40px 0 12px 0;
   background: #eff2f5;
-  max-height: 84px;
 }
 
 .customer .container {
-  max-width: 1140px;
+  max-width: 1170px;
   padding: 0 15px;
   margin: 0 auto;
   position: relative;
+  white-space: nowrap;
+  overflow: auto;
 }
 .customer .container ul {
   padding-left: 10px;
@@ -509,7 +517,6 @@ a {
 
 .myshow .box {
   display: inline-block;
-  width: 230px;
   padding: 10px;
   margin: 0 12px;
   background-color: #ebeff4;
