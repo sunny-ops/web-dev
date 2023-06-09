@@ -184,6 +184,14 @@ a {
   .myshow .box {
     width: 250px;
   }
+
+  .global_weather .details {
+    max-width: 440px;
+  }
+
+  .global_weather .container {
+    max-width: 1170px;
+  }
 }
 
 @media (max-width: 990px) {
@@ -241,9 +249,10 @@ a {
     margin-top: 1.5em;
     margin-left: 1em;
   }
-  /* .myshow .box {
-    width: auto;
-  } */
+
+  .global_weather .container {
+    max-width: 560px;
+  }
 }
 
 .promo {
@@ -589,7 +598,7 @@ a {
 
 .global_weather .container {
   padding: 0 15px;
-  max-width: 1170px;
+  /* max-width: 1170px; */
   margin: 0 auto;
   box-sizing: border-box;
 }
@@ -649,7 +658,8 @@ a {
 }
 
 .global_weather .img {
-  float: right;
+  /* max-width: 100%;
+  height: auto; */
 }
 
 .method {
